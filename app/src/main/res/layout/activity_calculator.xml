@@ -37,6 +37,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_1"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -48,6 +49,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_2"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -59,6 +61,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_3"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -70,6 +73,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_3"
             android:text="@string/plus"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -88,6 +92,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_4"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -99,6 +104,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_5"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -110,6 +116,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_6"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -121,6 +128,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_3"
             android:text="@string/minus"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -139,6 +147,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_7"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -150,6 +159,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_8"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -161,6 +171,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/_9"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -172,6 +183,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_3"
             android:text="@string/multiply"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -190,6 +202,7 @@
             android:layout_weight="2.04"
             android:background="@drawable/button_stile_1"
             android:text="@string/_0"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -201,6 +214,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_1"
             android:text="@string/dot"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -212,6 +226,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_3"
             android:text="@string/divide"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -230,6 +245,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_2"
             android:text="@string/dropping"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
@@ -241,6 +257,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_stile_2"
             android:text="@string/equally"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/number_text_size" />
 
