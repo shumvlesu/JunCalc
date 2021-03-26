@@ -3,6 +3,7 @@ package com.shumikhin.juncalc;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,11 +13,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    //окно куда выводится результат
+    TextView text_calc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
+        //Есть ли способ как-то эту портянку сократить?
         Button button0 = findViewById(R.id.button0);
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
@@ -56,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button_equally.setOnClickListener(this);
 
         button_dropping.setOnClickListener(this);
+
+        text_calc = findViewById(R.id.text_calc);
 
     }
 
