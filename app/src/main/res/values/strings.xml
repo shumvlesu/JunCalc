@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Debug</string>
+    <string name="app_name">JunCalc</string>
     <string name="is_equal">Равно?</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
