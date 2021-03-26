@@ -6,6 +6,7 @@ import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class CalcPresenter {
+
     // Последняя нажатая клавиша, если true - то цифра
     private boolean lastNumeric;
 
@@ -13,7 +14,11 @@ public class CalcPresenter {
     private boolean stateError;
 
     //если точка уже стоит то true и больше добавлять точку нельзя
-    private boolean booleanDot;
+    boolean booleanDot;
+
+
+
+
 
 
     public String onEqual(TextView txtScreen) {
@@ -31,7 +36,7 @@ public class CalcPresenter {
                 returnTxt = Double.toString(result);
                 booleanDot = true; // считаем что точка нажата
             } catch (ArithmeticException ex) {
-                // Сообщаю о ошибке
+                // Случилась какая-то ошибка, например поделили на 0
                 returnTxt = "Error";
                 stateError = true;
                 lastNumeric = false;
