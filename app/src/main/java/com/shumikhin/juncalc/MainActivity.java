@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //окно куда выводится результат
     TextView text_calc;
     CalcPresenter calcPresenter;
 
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(operatorButton).setOnClickListener(this);
         }
 
-        text_calc = findViewById(R.id.text_calc);
+        text_calc = (TextView) findViewById(R.id.text_calc);
 
         calcPresenter = new CalcPresenter();
 
@@ -47,15 +46,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()) {
             case R.id.button0:
-
-                //engine.appendEntry(".");
+                calcPresenter.numericClick("0");
                 break;
             case R.id.button1:
-
-                //engine.appendEntry(".");
+                calcPresenter.numericClick("1");
                 break;
-        }
+            case R.id.button2:
+                calcPresenter.numericClick("2");
+                break;
+            case R.id.button3:
+                calcPresenter.numericClick("3");
+                break;
+            case R.id.button4:
+                calcPresenter.numericClick("4");
+                break;
+            case R.id.button5:
+                calcPresenter.numericClick("5");
+                break;
+            case R.id.button6:
+                calcPresenter.numericClick("6");
+                break;
+            case R.id.button7:
+                calcPresenter.numericClick("7");
+                break;
+            case R.id.button8:
+                calcPresenter.numericClick("8");
+                break;
+            case R.id.button9:
+                calcPresenter.numericClick("9");
+                break;
+            case R.id.button_equally:
+                calcPresenter.onEqual();
+                break;
 
+
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + view.getId());
+        }
+        text_calc.setText(calcPresenter.getText_calc());
     }
 
 }
