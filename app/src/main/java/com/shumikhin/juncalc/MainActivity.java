@@ -2,7 +2,6 @@ package com.shumikhin.juncalc;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,61 +14,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //окно куда выводится результат
     TextView text_calc;
+    CalcPresenter calcPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
-        //Есть ли способ как-то эту портянку сократить?
-        Button button0 = findViewById(R.id.button0);
-        Button button1 = findViewById(R.id.button1);
-        Button button2 = findViewById(R.id.button2);
-        Button button3 = findViewById(R.id.button3);
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
-        Button button6 = findViewById(R.id.button6);
-        Button button7 = findViewById(R.id.button7);
-        Button button8 = findViewById(R.id.button8);
-        Button button9 = findViewById(R.id.button9);
+        initialization();
+    }
 
-        Button button_plus = findViewById(R.id.button_plus);// +
-        Button button_minus = findViewById(R.id.button_minus);// -
-        Button button_multiply = findViewById(R.id.button_multiply);// *
-        Button button_divide = findViewById(R.id.button_divide);// /
-        Button button_dot = findViewById(R.id.button_dot);// .
-        Button button_equally = findViewById(R.id.button_equally);// =
+    private void initialization() {
 
-        Button button_dropping = findViewById(R.id.button_dropping);// C
+        int[] numericButtons = {R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6, R.id.button7, R.id.button8, R.id.button9};
+        for (int numericButton : numericButtons) {
+            findViewById(numericButton).setOnClickListener(this);
+        }
 
-        button0.setOnClickListener(this);
-        button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
-        button4.setOnClickListener(this);
-        button5.setOnClickListener(this);
-        button6.setOnClickListener(this);
-        button7.setOnClickListener(this);
-        button8.setOnClickListener(this);
-        button9.setOnClickListener(this);
-
-        button_plus.setOnClickListener(this);
-        button_minus.setOnClickListener(this);
-        button_multiply.setOnClickListener(this);
-        button_divide.setOnClickListener(this);
-        button_dot.setOnClickListener(this);
-        button_equally.setOnClickListener(this);
-
-        button_dropping.setOnClickListener(this);
+        int[] operatorButtons = {R.id.button_plus, R.id.button_minus, R.id.button_multiply, R.id.button_divide, R.id.button_dot, R.id.button_equally, R.id.button_dropping};
+        for (int operatorButton : operatorButtons) {
+            findViewById(operatorButton).setOnClickListener(this);
+        }
 
         text_calc = findViewById(R.id.text_calc);
+
+        calcPresenter = new CalcPresenter();
 
     }
 
     @Override
     public void onClick(View view) {
-        //view.getId();
 
+        switch (view.getId()) {
+            case R.id.button0:
+
+                //engine.appendEntry(".");
+                break;
+            case R.id.button1:
+
+                //engine.appendEntry(".");
+                break;
+        }
 
     }
 

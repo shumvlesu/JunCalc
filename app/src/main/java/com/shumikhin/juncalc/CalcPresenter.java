@@ -17,9 +17,11 @@ public class CalcPresenter {
     boolean booleanDot;
 
 
-
-
-
+    public CalcPresenter() {
+        this.lastNumeric = false;
+        this.stateError = false;
+        this.booleanDot = false;
+    }
 
     public String onEqual(TextView txtScreen) {
 
