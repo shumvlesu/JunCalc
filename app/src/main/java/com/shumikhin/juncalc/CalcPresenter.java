@@ -1,11 +1,12 @@
 package com.shumikhin.juncalc;
 
-import android.widget.TextView;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
 
-public class CalcPresenter {
+public class CalcPresenter implements Parcelable {
 
     // Последняя нажатая клавиша, если true - то цифра
     private boolean lastNumeric;
@@ -20,6 +21,16 @@ public class CalcPresenter {
     StringBuilder text_calc;
 
     public CalcPresenter() {
+        clearAll();
+    }
+
+    protected CalcPresenter(Parcel in) {
+        lastNumeric = in.readByte() != 0;
+        stateError = in.readByte() != 0;
+        booleanDot = in.readByte() != 0;
+    }
+
+    public void clearAll() {
         this.lastNumeric = false;
         this.stateError = false;
         this.booleanDot = false;
@@ -36,13 +47,28 @@ public class CalcPresenter {
         lastNumeric = true;
     }
 
-    public String onEqual() {
+    public void mathOperationClick(String operationStr) {
+        if (lastNumeric && !stateError) {
+            text_calc.append(operationStr);
+            lastNumeric = false;
+            booleanDot = false;    // нет смысла если мы поставим точку после + или *
+        }
+    }
 
+    public void dotClick() {
+        if (lastNumeric && !stateError) {
+            text_calc.append(".");
+            lastNumeric = false;
+            booleanDot = true;
+        }
+    }
+
+    public void onEqual() {
         //Если ошибка то пропускаем
         //Если число то считаем
         String txt;
         String returnTxt = "";
-        if (lastNumeric && !stateError && text_calc.length()!=0) {
+        if (lastNumeric && !stateError && text_calc.length() != 0) {
             txt = text_calc.toString();
             Expression expression = new ExpressionBuilder(txt).build();
             try {
@@ -57,11 +83,35 @@ public class CalcPresenter {
                 lastNumeric = false;
             }
         }
-        return returnTxt;
+        text_calc.append("=").append(returnTxt);
     }
 
     public StringBuilder getText_calc() {
         return text_calc;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeByte((byte) (lastNumeric ? 1 : 0));
+        parcel.writeByte((byte) (stateError ? 1 : 0));
+        parcel.writeByte((byte) (booleanDot ? 1 : 0));
+        parcel.writeString(String.valueOf(text_calc));
+    }
+
+    public static final Creator<CalcPresenter> CREATOR = new Creator<CalcPresenter>() {
+        @Override
+        public CalcPresenter createFromParcel(Parcel in) {
+            return new CalcPresenter(in);
+        }
+
+        @Override
+        public CalcPresenter[] newArray(int size) {
+            return new CalcPresenter[size];
+        }
+    };
 }

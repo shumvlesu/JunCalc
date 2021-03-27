@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 //1. Напишите обработку каждой кнопки из макета калькулятора.
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String CALC_CLASS = "CALC_CLASS";
     TextView text_calc;
     CalcPresenter calcPresenter;
 
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(operatorButton).setOnClickListener(this);
         }
 
-        text_calc = (TextView) findViewById(R.id.text_calc);
+        text_calc = findViewById(R.id.text_calc);
 
         calcPresenter = new CalcPresenter();
 
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
+        //Егор, есть какя-то альтернатива этой партянке?
         switch (view.getId()) {
             case R.id.button0:
                 calcPresenter.numericClick("0");
@@ -75,11 +78,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button9:
                 calcPresenter.numericClick("9");
                 break;
+            case R.id.button_plus:
+                calcPresenter.mathOperationClick("+");
+                break;
+            case R.id.button_minus:
+                calcPresenter.mathOperationClick("-");
+                break;
+            case R.id.button_multiply:
+                calcPresenter.mathOperationClick("*");
+                break;
+            case R.id.button_divide:
+                calcPresenter.mathOperationClick("/");
+                break;
             case R.id.button_equally:
                 calcPresenter.onEqual();
                 break;
-
-
+            case R.id.button_dot:
+                calcPresenter.dotClick();
+                break;
+            case R.id.button_dropping:
+                calcPresenter.clearAll();
+                break;
 
             default:
                 throw new IllegalStateException("Unexpected value: " + view.getId());
@@ -87,4 +106,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         text_calc.setText(calcPresenter.getText_calc());
     }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(CALC_CLASS, calcPresenter);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        calcPresenter = savedInstanceState.getParcelable(CALC_CLASS);
+        assert calcPresenter != null;
+        text_calc.setText(calcPresenter.getText_calc());
+    }
 }
