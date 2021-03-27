@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="number_text_size">40sp</dimen>
+    <dimen name="number_text_size_land">25sp</dimen>
     <dimen name="button_margin">4dp</dimen>
     <dimen name="button_width">100dp</dimen>
     <dimen name="window_calc_number_size">70sp</dimen>
     <dimen name="size_button">80dp</dimen>
+    <dimen name="size_button_land">60dp</dimen>
     <dimen name="textCounter">20sp</dimen>
 </resources>
