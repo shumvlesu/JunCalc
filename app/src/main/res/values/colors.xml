@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="window_calc_color">#CBFFFFFF</color>
+    <color name="number_button_color">#ffb621</color>
 </resources>

@@ -3,7 +3,7 @@
 
     <corners android:radius="16dp" />
 
-    <solid android:color="#ffb621" />
+    <solid android:color="@color/number_button_color" />
 
     <padding
         android:bottom="16dp"
