@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/gradient"
     android:orientation="vertical">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@drawable/roundrect"
+        android:background="@drawable/rounded_frame_stile_lite"
         android:fillViewport="true">
 
         <TextView
             android:id="@+id/text_calc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:text="123456789"
             android:textAlignment="viewEnd"
-            android:textColor="@color/window_calc_color"
             android:textSize="@dimen/window_calc_number_size"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="123456789" />
 
     </androidx.core.widget.NestedScrollView>
 
@@ -31,51 +30,31 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
-            android:layout_width="@dimen/size_button"
-            android:layout_height="@dimen/size_button"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_1"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
-            android:layout_width="@dimen/size_button"
-            android:layout_height="@dimen/size_button"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_2"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
-            android:layout_width="@dimen/size_button"
-            android:layout_height="@dimen/size_button"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_3"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_3"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_plus"
-            android:layout_width="@dimen/size_button"
-            android:layout_height="@dimen/size_button"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonCalc"
+            style="@style/ButtonCalc"
             android:background="@drawable/button_stile_3"
-            android:text="@string/plus"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/plus"/>
 
     </LinearLayout>
 
@@ -86,51 +65,31 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_4"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_4"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_5"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_5"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_6"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_6"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_minus"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/size_button"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonCalc"
+            style="@style/ButtonCalc"
             android:background="@drawable/button_stile_3"
-            android:text="@string/minus"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/minus"/>
 
     </LinearLayout>
 
@@ -141,51 +100,31 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_7"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_7"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_8"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_8"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_9"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_9"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_multiply"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonCalc"
+            style="@style/ButtonCalc"
             android:background="@drawable/button_stile_3"
-            android:text="@string/multiply"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/multiply"/>
 
     </LinearLayout>
 
@@ -196,70 +135,47 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:layout_weight="2.04"
             android:background="@drawable/button_stile_1"
-            android:text="@string/_0"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/_0"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_dot"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonNumber"
+            style="@style/ButtonNumber"
             android:background="@drawable/button_stile_1"
-            android:text="@string/dot"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/dot"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_divide"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
-            android:layout_weight="1"
+            android:theme="@style/ButtonCalc"
+            style="@style/ButtonCalc"
             android:background="@drawable/button_stile_3"
-            android:text="@string/divide"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/divide"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:theme="@style/OperationCalc">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_dropping"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
+            style="@style/OperationCalc"
             android:layout_weight="1"
             android:background="@drawable/button_stile_2"
-            android:text="@string/dropping"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/dropping"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equally"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/button_margin"
+            style="@style/OperationCalc"
             android:layout_weight="1"
             android:background="@drawable/button_stile_2"
-            android:text="@string/equally"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/number_text_size" />
+            android:text="@string/equally"/>
 
     </LinearLayout>
 

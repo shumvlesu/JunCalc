@@ -7,10 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="window_calc_color">#CBFFFFFF</color>
-    <color name="number_button_color">#ffb621</color>
-    <color name="calc_button_color">#bf623f</color>
-    <color name="operation_button_color">#769d6c</color>
-    <color name="startColorGradient">#9CFFFFFE</color>
-    <color name="endColorGradient">#FFFFFF</color>
+    <color name="window_calc_color">#2AFFFFFF</color>
+    <color name="number_button_color">#A4FFAB00</color>
+    <color name="calc_button_color">#303F9F</color>
+    <color name="operation_button_color">#1C6709</color>
+    <color name="startColorGradient">#202020</color>
+    <color name="endColorGradient">#504F4F</color>
 </resources>
