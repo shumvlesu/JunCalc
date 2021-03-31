@@ -179,4 +179,17 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:theme="@style/OperationCalc">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_customization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customization" />
+    </LinearLayout>
+
 </LinearLayout>
