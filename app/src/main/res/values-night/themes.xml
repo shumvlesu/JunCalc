@@ -14,7 +14,7 @@
 <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
 <!--    </style>-->
 
-    <style name="Theme.JunCalc" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.JunCalcN" parent="Theme.MaterialComponents.Light.NoActionBar">
 
         <item name="colorPrimary">@color/number_button_color</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -24,7 +24,7 @@
 
     </style>
 
-    <style name="ButtonNumber" parent="Theme.JunCalc">
+    <style name="ButtonNumber" parent="Theme.JunCalcN">
 
         <item name="colorPrimary">@color/number_button_color</item>
         <item name="background">@drawable/button_stile_1</item>
@@ -39,7 +39,7 @@
 
     </style>
 
-    <style name="ButtonCalc" parent="Theme.JunCalc">
+    <style name="ButtonCalc" parent="Theme.JunCalcN">
 
         <item name="colorPrimary">@color/calc_button_color</item>
         <item name="background">@drawable/button_stile_3</item>
@@ -55,7 +55,7 @@
     </style>
 
 
-    <style name="OperationCalc" parent="Theme.JunCalc">
+    <style name="OperationCalc" parent="Theme.JunCalcN">
 
         <item name="colorPrimary">@color/operation_button_color</item>
         <item name="background">@drawable/button_stile_2</item>

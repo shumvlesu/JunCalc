@@ -1,5 +1,6 @@
 package com.shumikhin.juncalc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         text_calc = findViewById(R.id.text_calc);
 
         calcPresenter = new CalcPresenter();
+
+
+        findViewById(R.id.button_customization).setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, Customization.class));
+        });
 
     }
 

@@ -29,14 +29,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radioButtonMyCoolStyle"
+            android:id="@+id/radioButtonLightTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/light_theme" />
 
         <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radioButtonMaterialLight"
+            android:id="@+id/radioButtonNightTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/night_theme" />
