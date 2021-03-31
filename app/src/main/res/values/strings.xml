@@ -20,4 +20,7 @@
     <string name="dropping">C</string>
     <string name="counter_1">Counter1</string>
     <string name="counter_2">Counter2</string>
+    <string name="night_theme">Night theme</string>
+    <string name="light_theme">Light theme</string>
+    <string name="customization">Настройки</string>
 </resources>
