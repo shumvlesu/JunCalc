@@ -37,31 +37,31 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button1"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_1" />
+                android:text="@string/_1"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button2"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_2"/>
+                android:text="@string/_2"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button3"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_3"/>
+                android:text="@string/_3"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_plus"
-                android:theme="@style/ButtonCalc"
                 style="@style/ButtonCalc"
                 android:background="@drawable/button_stile_3"
-                android:text="@string/plus"/>
+                android:text="@string/plus"
+                android:theme="@style/ButtonCalc" />
 
         </LinearLayout>
 
@@ -72,31 +72,31 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button4"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_4"/>
+                android:text="@string/_4"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button5"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_5"/>
+                android:text="@string/_5"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button6"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_6"/>
+                android:text="@string/_6"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_minus"
-                android:theme="@style/ButtonCalc"
                 style="@style/ButtonCalc"
                 android:background="@drawable/button_stile_3"
-                android:text="@string/minus"/>
+                android:text="@string/minus"
+                android:theme="@style/ButtonCalc" />
 
         </LinearLayout>
 
@@ -107,31 +107,31 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button7"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_7"/>
+                android:text="@string/_7"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button8"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_8"/>
+                android:text="@string/_8"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button9"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_9"/>
+                android:text="@string/_9"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_multiply"
-                android:theme="@style/ButtonCalc"
                 style="@style/ButtonCalc"
                 android:background="@drawable/button_stile_3"
-                android:text="@string/multiply"/>
+                android:text="@string/multiply"
+                android:theme="@style/ButtonCalc" />
 
         </LinearLayout>
 
@@ -142,45 +142,45 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button0"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:layout_weight="2.04"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/_0"/>
+                android:text="@string/_0"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_dot"
-                android:theme="@style/ButtonNumber"
                 style="@style/ButtonNumber"
                 android:background="@drawable/button_stile_1"
-                android:text="@string/dot"/>
+                android:text="@string/dot"
+                android:theme="@style/ButtonNumber" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_divide"
-                android:theme="@style/ButtonCalc"
                 style="@style/ButtonCalc"
                 android:background="@drawable/button_stile_3"
-                android:text="@string/divide"/>
+                android:text="@string/divide"
+                android:theme="@style/ButtonCalc" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:theme="@style/OperationCalc"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:theme="@style/OperationCalc">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_dropping"
                 style="@style/OperationCalc"
                 android:background="@drawable/button_stile_2"
-                android:text="@string/dropping"/>
+                android:text="@string/dropping" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_equally"
                 style="@style/OperationCalc"
                 android:background="@drawable/button_stile_2"
-                android:text="@string/equally"/>
+                android:text="@string/equally" />
 
         </LinearLayout>
 

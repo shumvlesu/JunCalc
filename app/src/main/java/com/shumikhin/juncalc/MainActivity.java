@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 //2. Создайте объект с данными и операциями калькулятора. Продумайте, каким образом будете хранить введённые пользователем данные.
 //3. * Создайте макет калькулятора для горизонтальной ориентации экрана и отображайте его в ландшафтной ориентации.
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private static final String CALC_CLASS = "CALC_CLASS";
     TextView text_calc;
@@ -125,4 +125,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assert calcPresenter != null;
         text_calc.setText(calcPresenter.getText_calc());
     }
+
 }
