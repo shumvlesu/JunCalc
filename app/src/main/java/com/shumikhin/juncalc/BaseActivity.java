@@ -56,7 +56,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void loadPrefs(SwitchMaterial switchNightMode) {
         // getSharedPreferences() доступна только в активити
         SharedPreferences prefs = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
-        // переключатель ночного режима только в портретном режиме
+
+        //ЕГОР, ВОПРОС:
+        // Почему переключатель ночного режима работает только в портретном режиме
+        //это из за того что нет портретной формы у формы настроек?
         if (switchNightMode != null) {
             if (prefs.contains(NIGHT_MODE_KEY)) {
                 // Чтение настроек, параметр «ночной режим», если настройка не найдена - взять по умолчанию false
